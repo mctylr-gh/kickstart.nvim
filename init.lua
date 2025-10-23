@@ -169,6 +169,11 @@ vim.o.confirm = true
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
+-- MCT - Disable looking for Perl package Neovim::Ext
+vim.g.loaded_perl_provider = 0
+-- MCT -
+vim.g.python3_host_prog = '/usr/bin/python3'
+
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
